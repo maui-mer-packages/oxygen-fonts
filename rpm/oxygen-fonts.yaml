@@ -1,0 +1,27 @@
+Name        : oxygen-fonts
+Version     : 0.3.96
+Release     : 1
+Group       : System/X11/Fonts
+License     : OFL, GPL, GPL+FE
+Summary     : A desktop/gui font family for integrated use with the KDE desktop
+Description : A desktop/gui font family for integrated use with the KDE desktop.
+URL         : https://projects.kde.org/projects/playground/artwork/oxygen-fonts
+Sources     :
+    - "http://download.kde.org/unstable/plasma/4.96.0/src/%{name}-%{version}.tar.xz"
+SetupOptions: -q -n %{name}-%{version}
+BuildArch   : noarch
+
+PkgBR:
+    - cmake
+    - extra-cmake-modules
+    - fontpackages-devel
+PkgConfigBR:
+    - Qt5Core
+    - Qt5Gui
+
+Configure  : cmake 
+ConfigOptions: 
+    - -DLIB_INSTALL_DIR=%{_lib}
+
+Files:
+    - "%doc COPYING-GPL+FE.txt COPYING-OFL"
