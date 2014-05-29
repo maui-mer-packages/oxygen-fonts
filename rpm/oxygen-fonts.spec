@@ -80,13 +80,8 @@ ln -s %{_fontconfig_templatedir}/%{fontconf} \
 %{buildroot}%{_fontconfig_confdir}/%{fontconf}
 # << install post
 
-%files
-%defattr(-,root,root,-)
+%_font_pkg -f %{fontconf} *.ttf
 %doc COPYING-GPL+FE.txt COPYING-OFL
-%{_fontconfig_templatedir}
-%{_fontconfig_confdir}
-# >> files
-# << files
 
 %files devel
 %defattr(-,root,root,-)

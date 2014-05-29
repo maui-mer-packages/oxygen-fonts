@@ -39,11 +39,6 @@ PkgConfigBR:
 Requires:
     - fontpackages-filesystem
 
-Files:
-    - "%doc COPYING-GPL+FE.txt COPYING-OFL"
-    - "%{_fontconfig_templatedir}"
-    - "%{_fontconfig_confdir}"
-
 SubPackages:
     - Name: devel
       Group: Development/Libraries
