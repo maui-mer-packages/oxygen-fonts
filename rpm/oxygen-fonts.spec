@@ -9,7 +9,7 @@ Name:       oxygen-fonts
 # << macros
 
 Summary:    A desktop/gui font family for integrated use with the KDE desktop
-Version:    0.3.96
+Version:    0.4
 Release:    1
 Group:      System/Base
 License:    GPLv2+
