@@ -85,6 +85,6 @@ ln -s %{_fontconfig_templatedir}/%{fontconf} \
 
 %files devel
 %defattr(-,root,root,-)
-%{_kf5_libdir}/cmake/OxygenFont
+%{_kf5_cmakedir}/OxygenFont
 # >> files devel
 # << files devel

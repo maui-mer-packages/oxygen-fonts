@@ -47,4 +47,4 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Files:
-          - "%{_kf5_libdir}/cmake/OxygenFont"
+          - "%{_kf5_cmakedir}/OxygenFont"
